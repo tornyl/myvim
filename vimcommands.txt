@@ -1,0 +1,21 @@
+select all-  ggVG
+seleck current line- V
+delete selection- x
+move to the end of line- $
+jump to one char left and switch to insert mode- a
+jump to the end of line and switch to insert mode- A
+Move to the beginning of the line- 0
+jump forward 10 lines- 10j
+jump backward 10 lines- 10k
+
+copy- "{register}y
+cut- "{register}d
+paste- Ctrl-r{register}
+serach fot text adn replace- s/{pattern}/{repace}/g
+search whole file adn replace- %s/{pattern}/{replace}/g
+
+
+
+set equalalways
+set tabstop=3
+set mouse=a
