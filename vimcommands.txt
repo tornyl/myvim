@@ -14,6 +14,8 @@ paste- Ctrl-r{register}
 serach fot text adn replace- s/{pattern}/{repace}/g
 search whole file adn replace- %s/{pattern}/{replace}/g
 
+go to line- {number}gg
+autocomplete- ctrl+n
 
 
 set equalalways
