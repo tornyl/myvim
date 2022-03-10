@@ -17,7 +17,56 @@ search whole file adn replace- %s/{pattern}/{replace}/g
 go to line- {number}gg
 autocomplete- ctrl+n
 
+comment block of text: 1) ctrl+V
+							  2) select lines
+							  3) shift+i
+							  4) insert comment char
+							  5) esc
+
+uncomment -||-: 1) put curosr on the first "comment char"
+					 2) ctrl+V
+					 3) x
 
 set equalalways
 set tabstop=3
 set mouse=a
+
+:qa quit all windows
+^ moves to the first non exmpty charachter
+ctrl-D, ctrl u moves up or down by one page
+h m l keys moves to the highest  , middle, nad lowest line of page
+f-letter- goes to the first -letter
+F-letter- goes backwards to the first -letter-
+t-letter- goes to the first -letter (beforse -letter-)
+T-letter- goes backwards to the first -letter- (before -letter-)
+o -creates new line move to line and puts in inssert mode
+O - create new line  move to line (backward) and puts in insert mode
+d -deletes
+	dw delets word
+	de delete end of the word
+
+ce -change
+	ce deletes end of the world and puts in Insert mode
+	cc deletes line and puts in INsert
+	c2w -cahnge two words
+
+^R - redo
+
+y -copy 
+	yw copy word
+
+V visual line mode
+ctrl-v visual block
+~ changes case of text
+e -go to end of word
+	3e to the third end of word
+
+7dw -delete 7 words
+
+ci[ -change inside brackets
+di[ -dletes inside prantesess
+da[ -deltes prenteses and inside
+% -jump back and forth between matching pranteces
+G -go to bottom of file
+/ -start search
+. repetaes prevoius insert change
