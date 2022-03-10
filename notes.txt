@@ -1,0 +1,109 @@
+sinister
+
+cd -  "cahnge directory to previous one"
+coomand --help "show documetnation"
+rmdir remove direcoty only if its empty
+
+mkdir "my photos"
+
+< file > file  "<" rewire input stream to contenst of file
+					"." rewier output strem to file 
+
+
+example: 
+		cat < hello.txt > hello2.txt  - copies content of file to file2
+
+cat >>  "append"
+
+
+| -takes output of left and make it input to right
+
+tail -n1  -print last n lines of output 
+
+sudo su -switch curent chell from user to root
+exmaple:
+	sudo su
+	echo 500 > brightness
+
+tee takes input and writes it to a file
+
+echo 500 | sudo tee brightness
+
+xdg-open file -opens file in appropariate program
+
+----
+
+foo=bar -define variable
+
+foo = bar - not working
+
+foo=$(pwd)
+
+echo "Value is $foo"
+echo 'Value is $foo'
+
+----
+
+file.sh
+
+mcd(){
+	mkdir -p "1$"   - $1 means first argument
+	cd "$1"
+}
+
+----
+ !! -repalce this with last command
+
+ cat <(ls) <(ls ..) -creates "temorary file" and concatenate
+
+ ls *.sh -only ls .sh files
+
+ ls project? -ls all dirs nanmed project1 priejct2 ...
+
+----
+
+convert image.png image.jpg
+convert image.{png,jpg}
+
+touch project{1,2}/src/test/test{1,2,3}.py
+touch foo{a..h}
+
+
+----
+
+shellcheck examepl.sh
+
+
+
+----
+isntall tldr
+
+-----
+find .  -name src -type d
+find . -path '**/test/*.py' -type f
+find . -name "*.tmp" -exec rm {}  \;
+
+better way of finding : fd ".*py" (ignore git files ...)
+
+locate mssing-semester
+
+----
+
+grep foobar mcd.sh -find foobar in mcd.sh file
+grep -R foobar searches for foobar in current directory
+rg "import requests" -t py ~/scratch
+rg "import requests" -t py -stats ~/scratch
+rg --files-wthithout-match "import requests"-t py ~/scratch
+rg "import requests" -t py -C 5 ~/scratch -same as above but also outpus files lines around 
+
+
+-----
+history -prints history of commands
+history | grep contenxt
+
+----
+
+cat exmaple.txt | fzf -interactive finding
+
+-----
+tree -list recursively files and dirs
